@@ -36,9 +36,9 @@ if __name__ == '__main__':
     context = col9.text_area("請輸入內文:", value = st.session_state.context, height=170)
     
     col1, col2, col3, col4, col5 = st.columns(5)
-    chatGPT = col1.checkbox('ChatGPT導入內文', value=False)
-    topic = col2.text_input("您希望ChatGPT是何種專家:", value = '機器學習')
-    temperature = col3.slider('ChatGPT的創意程度', 0.0, 1.0, 0.0, 0.1)
+    #chatGPT = col1.checkbox('ChatGPT導入內文', value=False)
+    #topic = col2.text_input("您希望ChatGPT是何種專家:", value = '機器學習')
+    #temperature = col3.slider('ChatGPT的創意程度', 0.0, 1.0, 0.0, 0.1)
     num_of_points = col5.number_input("投影片每頁要列出幾點:", value = 4)
     
     if st.button("產生PPT"):
