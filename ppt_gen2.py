@@ -28,7 +28,7 @@ if __name__ == '__main__':
     col6, col7 = st.columns(2)
     
     title = col6.text_input("請輸入標題:", value = '要如何學習機器學習')
-    sub_title = col7.text_input("請輸入副標題:", value = '陳姿羽/銘傳大學資工系')
+    sub_title = col7.text_input("請輸入副標題:", value = '李御璽/銘傳大學資工系')
     
     col8, col9 = st.columns([1,4])
     
@@ -42,7 +42,7 @@ if __name__ == '__main__':
     num_of_points = col5.number_input("投影片每頁要列出幾點:", value = 4)
     
     if st.button("產生PPT"):
-    
+        
         # 產生投影片
         prs = Presentation()
         
