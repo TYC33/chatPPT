@@ -28,7 +28,7 @@ if __name__ == '__main__':
     col6, col7 = st.columns(2)
     
     title = col6.text_input("請輸入標題:", value = '要如何學習機器學習')
-    sub_title = col7.text_input("請輸入副標題:", value = '李御璽/銘傳大學資工系')
+    sub_title = col7.text_input("請輸入副標題:", value = '陳姿羽/銘傳大學資工系')
     
     col8, col9 = st.columns([1,4])
     
