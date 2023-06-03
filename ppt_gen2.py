@@ -42,29 +42,6 @@ if __name__ == '__main__':
     num_of_points = col5.number_input("投影片每頁要列出幾點:", value = 4)
     
     if st.button("產生PPT"):
-        '''if chatGPT:
-            # 呼叫 API 
-            if len(topic) >= 1 and ord(topic[0]) >= 256: # 是否為中文
-                system_prompt = f"你是{topic}專家"
-            else:
-                system_prompt = f"You are a {topic} assistant"
-                
-            messages=[
-                {"role": "system", "content": system_prompt},
-                {"role": "user", "content": title}
-            ]
-            
-            response = openai.ChatCompletion.create(
-                model = 'gpt-3.5-turbo',
-                messages = messages,
-                temperature = temperature,
-            )
-            
-            context = response.choices[0].message.content
-            st.session_state.context = context
-            
-            col4.checkbox('ChatGPT導入顯示')
-        '''
     
         # 產生投影片
         prs = Presentation()
